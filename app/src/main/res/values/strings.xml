@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="Something_went_wrong">Something went wrong</string>
+    <string name="noConnectionError">It appears that the internet \n connection is offline</string>
+    <string name="retry">Retry</string>
+    <string name="network_error">Phone is not connected with internet, try again later</string>
+    <string name="not_found">Data not found</string>
+    <string name="home">Home</string>
+
+</resources>

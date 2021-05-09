@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp5"
+        android:elevation="@dimen/dp3"
+        app:cardBackgroundColor="@color/whiteColor"
+        app:cardCornerRadius="@dimen/dp3"
+        app:cardElevation="@dimen/dp3"
+        app:contentPadding="@dimen/dp10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rishabhharit.roundedimageview.RoundedImageView
+                android:id="@+id/iv_img"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@color/background"
+                app:cornerRadius="@dimen/dp50"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:roundedCorners="all" />
+
+
+            <View
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp15"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp25"
+                android:background="@color/background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_img"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp25" />
+
+            <View
+                android:id="@+id/tv_order_price_formatted"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp3"
+                android:background="@color/background"
+                app:layout_constraintStart_toStartOf="@+id/tv_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            <View
+                android:id="@+id/tv_phone_number"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp3"
+                android:background="@color/background"
+                app:layout_constraintStart_toStartOf="@+id/tv_order_price_formatted"
+                app:layout_constraintTop_toBottomOf="@+id/tv_order_price_formatted" />
+
+            <View
+                android:id="@+id/iv_cal"
+                android:layout_width="@dimen/dp10"
+                android:layout_height="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:background="@color/background"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_phone_number"
+                app:layout_constraintEnd_toStartOf="@+id/tv_load_ref"
+                app:layout_constraintTop_toTopOf="@+id/tv_phone_number"
+                android:layout_marginRight="@dimen/dp10" />
+
+            <View
+                android:id="@+id/tv_load_ref"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp25"
+                android:background="@color/background"
+                android:minHeight="@dimen/dp10"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_phone_number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_phone_number"
+                android:layout_marginRight="@dimen/dp25" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
